@@ -1,14 +1,14 @@
-#include "_putchar"
+#include "main.h"
 
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-nt main(void)
+int main(void)
 {
-	char *sh = "_putchar";
-while (*sh)
+	char *sh ="_putchar";
+        while (*sh)
 	{
 		_putchar(*sh);
 		sh++;
@@ -16,4 +16,4 @@ while (*sh)
 	_putchar('\n');
 
 	return (0);
-}  
+}
