@@ -1,46 +1,26 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_number -  checks for checks for a digit (0 through 9).
- * @n: n -  Variable
- * Return: Always 0.
+ * main - finds and prints the largest prime factor of the number
+ * 612852475143
+ * Return: 0.
  */
-void print_number(int n)
+
+int main(void)
 {
-	unsigned int z;
-	int m, b;
+long num = 612852475143;
+long divisor = 2;
+long larg_prim = 0;
 
-	b = 10;
-
-	if (n < 10 && n >= 0)
-	{
-		_putchar (n + '0');
-	}
-	else if (n > -10 && n < 0)
-	{
-		n = n - 2 * n;
-		_putchar('-');
-		_putchar (n + '0');
-	}
-
-	else
-	{
-		if (n < 0)
-		{
-			n = n * -1;
-			_putchar ('-');
-		}
-		z = n;
-	while (z / b > 9)
-	{
-		b = b * 10;
-	}
-	while (b > 0)
-	{
-		m = z / b;
-		z = z % b;
-		_putchar (m + '0');
-		b = b / 10;
-	}
-	}
+while (num != 1)
+{
+if (num % divisor == 0)
+{
+num = num / divisor;
+larg_prim = divisor;
+}
+divisor += 1;
+}
+printf("%ld\n", larg_prim);
+return (0);
 }
