@@ -1,8 +1,8 @@
-include "main.h"
+ #include "main.h"
 /**
-* _isdigit - checks for a digit (0 through 9)
-* @c: integer variable
-* Return: 1 if c is a digit
+* _isupper - checks for uppercase character
+* @c: ASCII integer
+* Return: 1 if c is upper
 * 0 otherwise
 */
 int _isupper(int c)
