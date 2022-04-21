@@ -5,9 +5,11 @@ include "main.h"
 * Return: 1 if c is a digit
 * 0 otherwise
 */
-int _isdigit(int c)
+int _isupper(int c)
 {
-if (c > 47 && c < 58)
+if (c >= 65 && c <= 90)
+{
 return (1);
+}
 return (0);
 }
